@@ -51,7 +51,7 @@ function handleEvent(senderId,event){
     }
   }else{
     // Recibimos sobre eventos
-    console.log(event.postback.payload);
+    // console.log(event.postback.payload);
     handlePostback(senderId,event)
   }
 }
@@ -101,7 +101,7 @@ function handleSearchMessage(senderId,event){
       senderActions(senderId);
       callSendApi(messageData);
     }else{
-      console.log("no lo encontro");
+      // console.log("no lo encontro");
     }
   }
 }
@@ -731,5 +731,5 @@ function callSendApi(response){
 
 // Una funcion para indicar si esta funcionando o no nuestra aplicacion
 app.listen(app.get('port'), function(){
-  console.log('nuestro servidor esta funcionando en el puerto: ' + app.get('port'))
+  // console.log('nuestro servidor esta funcionando en el puerto: ' + app.get('port'))
 });
